@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle - Shqip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Instructions Modal -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal">
+            <button class="modal-close" id="modal-close">×</button>
+            <h2>Qëllimi i lojes</h2>
+            <p>“Gjej fjalen” eshte nje loje digjitale edukative e krijuar per te mbeshtetur mesimin e gjuhes shqipe ne menyre bashkohore, terheqese dhe motivuese.
+                Ajo shnderron fjalorin nga nje ushtrim I zakonshem shkollor ne nje pervoje interaktive, ku nxenesi eshte aktiv, I angazhuar dhe I nxitur te mendoje.
+            </p>
+            <h2>Si të Luash</h2>
+            <p>Gjeni fjalën në 6 tentativa.</p>
+            <ul>
+                <li>Çdo tentativë duhet të jetë një fjalë me numrin e zgjedhur të shkronjave.</li>
+                <li>Ngjyra e kutive do të ndryshojë për të treguar sa afër është tentativa juaj me fjalën.</li>
+            </ul>
+            
+            <h3>Shembuj</h3>
+            
+            <div>
+                <div class="example-word">
+                    <div class="example-tile correct">S</div>
+                    <div class="example-tile">H</div>
+                    <div class="example-tile">Q</div>
+                    <div class="example-tile">I</div>
+                    <div class="example-tile">P</div>
+                </div>
+                <p><strong>S</strong> është pjesë e fjalës dhe në pozicionin e saktë.</p>
+            </div>
+            
+            <div>
+                <div class="example-word">
+                    <div class="example-tile">F</div>
+                    <div class="example-tile">J</div>
+                    <div class="example-tile present">A</div>
+                    <div class="example-tile">L</div>
+                    <div class="example-tile">Ë</div>
+                </div>
+                <p><strong>A</strong> është pjesë e fjalës por në pozicionin e gabuar.</p>
+            </div>
+            
+            <div>
+                <div class="example-word">
+                    <div class="example-tile">M</div>
+                    <div class="example-tile">I</div>
+                    <div class="example-tile">R</div>
+                    <div class="example-tile">Ë</div>
+                    <div class="example-tile absent">K</div>
+                </div>
+                <p><strong>K</strong> nuk është pjesë e fjalës.</p>
+            </div>
+            
+            <div class="word-length-selection">
+                <label>Zgjidhni gjatësinë e fjalës:</label>
+                <div class="length-options">
+                    <div class="length-option" data-length="4">4 Shkronja</div>
+                    <div class="length-option selected" data-length="5">5 Shkronja</div>
+                    <div class="length-option" data-length="6">6 Shkronja</div>
+                </div>
+                <button class="start-button" id="start-button">Fillo Lojën</button>
+            </div>
+        </div>
+    </div>
+
+    <img src="Logoja.png" alt="School Logo" class="school-logo" draggable="false">
+    
+    <div class="container">
+        <header>
+            <h1>Gjej Fjalën</h1>
+        </header>
+        
+        <div class="game-container">
+            <div id="message" class="message"></div>
+            
+            <div id="grid" class="grid"></div>
+            
+            <button id="replay-button" class="replay-button" style="display: none;">Luaj Përsëri</button>
+            
+            <div id="keyboard" class="keyboard"></div>
+        </div>
+    </div>
+    
+    <script src="words.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
