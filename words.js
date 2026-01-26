@@ -11,7 +11,7 @@ const WORDS_4 =
 const WORDS_5 = [
     'SHQIP', 'DRITË', 'ZEMËR', 'DASHI', 'DJALË', 'FJALË', 'SHTET', 'ÇELËS', 'DJATH',
     'GJATË', 'MBRET', 'XHUXH', 'ÇARJE', 'KRYER', 'NDERI', 'PJESË', 'VENDI', 'JETOJ', 
-    'LEKËT', 'MBUSH', 'TREGO', 'UJITË', 'XHAMA', 'BALLË', 'LLOJE', 'RRETH', 'KREJT'
+    'LEKËT', 'MBUSH', 'TREGO', 'XHAMA', 'BALLË', 'LLOJE', 'RRETH', 'KREJT'
 ];
 
 // List of 6-letter Albanian words
