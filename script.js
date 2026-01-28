@@ -89,30 +89,30 @@ function createKeyboard() {
     const keyboard = document.getElementById('keyboard');
     keyboard.innerHTML = '';
     
-    // First row: A B C Ç D E Ë F G H
+    // First row: Q W E Ë R T Y U I O P  (similar to a normal keyboard, with Ë near E)
     const row1 = document.createElement('div');
     row1.className = 'keyboard-row';
-    const row1Letters = ['A', 'B', 'C', 'Ç', 'D', 'E', 'Ë', 'F', 'G', 'H'];
+    const row1Letters = ['Q', 'W', 'E', 'Ë', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'];
     row1Letters.forEach(letter => {
         const key = createKey(letter);
         row1.appendChild(key);
     });
     keyboard.appendChild(row1);
     
-    // Second row: I J K L M N O P Q R
+    // Second row: A S D F G H J K L
     const row2 = document.createElement('div');
     row2.className = 'keyboard-row';
-    const row2Letters = ['I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R'];
+    const row2Letters = ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'];
     row2Letters.forEach(letter => {
         const key = createKey(letter);
         row2.appendChild(key);
     });
     keyboard.appendChild(row2);
     
-    // Third row: S T U V X Y Z + Enter + Backspace
+    // Third row: Z X C Ç V B N M + Enter + Backspace (Ç placed near C)
     const row3 = document.createElement('div');
     row3.className = 'keyboard-row';
-    const row3Letters = ['S', 'T', 'U', 'V', 'X', 'Y', 'Z'];
+    const row3Letters = ['Z', 'X', 'C', 'Ç', 'V', 'B', 'N', 'M'];
     row3Letters.forEach(letter => {
         const key = createKey(letter);
         row3.appendChild(key);
